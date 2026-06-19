@@ -97,7 +97,7 @@ function initializeDarkMode() {
         document.body.classList.add("dark-mode");
     }
 
-    updateThemeButtonText();
+    updateThemeButtonState();
 
     if (!toggleButton) {
         return;
@@ -107,22 +107,20 @@ function initializeDarkMode() {
         document.body.classList.toggle("dark-mode");
         const theme = document.body.classList.contains("dark-mode") ? "dark" : "light";
         localStorage.setItem("geektech-theme", theme);
-        updateThemeButtonText();
+        updateThemeButtonState();
     });
 }
 
-function updateThemeButtonText() {
+function updateThemeButtonState() {
     const toggleButton = document.querySelector(".theme-toggle");
-    const buttonText = document.querySelector(".theme-toggle__text");
 
-    if (!toggleButton || !buttonText) {
+    if (!toggleButton) {
         return;
     }
 
     const isDarkMode = document.body.classList.contains("dark-mode");
     toggleButton.classList.toggle("theme-toggle--dark", isDarkMode);
     toggleButton.classList.toggle("theme-toggle--light", !isDarkMode);
-    buttonText.textContent = isDarkMode ? "Night Mode" : "Day Mode";
     toggleButton.setAttribute("aria-label", isDarkMode ? "Switch to light mode" : "Switch to dark mode");
 }
 
