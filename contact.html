@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact GeekTech for web development, app development, and UI/UX design services.">
+    <title>Contact GeekTech | Let's Start Your Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <a class="brand-mark" href="index.html" aria-label="GeekTech home page">
+                <img src="images/logo.jpg" alt="GeekTech brand logo" width="56" height="56">
+                <span>
+                    <strong>GeekTech</strong>
+                    <small>Digital Services Studio</small>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="primary-nav" aria-label="Primary navigation">
+                <ul id="primary-navigation" class="nav-list">
+                    <li><a href="index.html" data-nav-link="home">Home</a></li>
+                    <li><a href="about.html" data-nav-link="about">About</a></li>
+                    <li><a href="services.html" data-nav-link="services">Services</a></li>
+                    <li><a href="contact.html" data-nav-link="contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+                <span class="theme-toggle__text">Night Mode</span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="section reveal">
+            <div class="container contact-layout">
+                <div class="contact-panel">
+                    <p class="eyebrow">Contact Information</p>
+                    <div class="contact-details">
+                        <article>
+                            <h3>Email</h3>
+                            <p><a href="mailto:support@geektech.com">support@geektech.com</a></p>
+                        </article>
+                        <article>
+                            <h3>Phone</h3>
+                            <p><a href="tel:0000000000">00000 00000</a></p>
+                        </article>
+                        <article>
+                            <h3>Business Hours</h3>
+                            <p>Monday - Friday</p>
+                            <p>9:00 AM - 6:00 PM</p>
+                        </article>
+                        <article>
+                            <h3>Location</h3>
+                            <p>ABC Building, MNO Street, XYZ - 000000</p>
+                        </article>
+                    </div>
+
+                </div>
+
+                <div class="form-panel">
+                    <p class="eyebrow">Send a Message</p>
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" placeholder="Your name" aria-describedby="nameError">
+                            <small id="nameError" class="error-message" aria-live="polite"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="you@example.com" aria-describedby="emailError">
+                            <small id="emailError" class="error-message" aria-live="polite"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input id="subject" name="subject" type="text" placeholder="Project subject" aria-describedby="subjectError">
+                            <small id="subjectError" class="error-message" aria-live="polite"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell GeekTech about your project" aria-describedby="messageError"></textarea>
+                            <small id="messageError" class="error-message" aria-live="polite"></small>
+                        </div>
+
+                        <button class="btn btn-primary btn-full" type="submit">Submit Inquiry</button>
+                        <p id="formStatus" class="form-status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h2>GeekTech</h2>
+                <p>Professional technology services for businesses, startups, and individuals seeking modern digital solutions.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p><a href="mailto:support@geektech.com">support@geektech.com</a></p>
+                <p><a href="tel:0000000000">00000 00000</a></p>
+                <p>ABC Building, MNO Street, XYZ - 000000</p>
+                <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" type="button" aria-label="Scroll back to top">&#8593;</button>
+    <script src="js/script.js"></script>
+</body>
+</html>
