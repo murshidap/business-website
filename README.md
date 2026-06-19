@@ -1,4 +1,4 @@
-# GeekTech Business Website
+# GeekTech Business Website - https://murshidap.github.io/business-website/
 
 ## Project Overview
 This project is a complete responsive business website created for the Week 4 internship project. It represents **GeekTech**, a fictional professional technology services company that offers web development, app development, and UI/UX design solutions.
@@ -124,16 +124,13 @@ Semantic HTML, skip links, focus-visible styles, proper labels, ARIA attributes,
 - Accessibility checks were considered with semantic markup and focus styling.
 - Cross-browser testing should be performed in Chrome, Edge, and Firefox before final submission.
 
-## Screenshots
-Add screenshots here before submission:
+## Screenshots-images/screenshots
 - Homepage
 - About page
 - Services page
 - Contact page
-- Mobile view
-- Dark mode
-- Form validation
-- Deployment screenshot
+- Dark mode/light mode
 
 ## Author
-GeekTech
+Murshida P
+
